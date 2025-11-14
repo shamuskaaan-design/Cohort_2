@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height:3000px;
+        width: 100%;
+      }
+      #relative-box {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border: 2px solid red;
+      }
+
+      #absolute-box {
+        position: absolute;
+        top: 170px;
+        right: 4px;
+        width: 50px;
+        height: 25px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 25px;
+        font-size:15px;
+        border-radius:5px;
+      }
+      #sticky {
+        position:sticky;
+        top:0;
+        width:100%;
+        height:50px;
+        background-color: rgb(13, 96, 169);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sticky"></div>
+    <div id="relative-box">
+      <div id="absolute-box">25:90</div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sit, distinctio animi placeat harum veniam tempore ipsam, dolor explicabo sint eaque et sed laboriosam aliquid. Neque error iusto hic modi quo sequi quidem ab quisquam! Porro laudantium eveniet sequi laborum, omnis nulla. Quas, corporis velit! Eaque quos ducimus amet debitis ipsa asperiores quibusdam eligendi rerum, sit assumenda autem velit, qui ipsum itaque dolor magnam dolores dicta iusto fugiat earum. Beatae odio commodi, sapiente amet quidem iusto eveniet asperiores perferendis totam harum dicta, doloribus possimus qui architecto nulla iste nemo! Magnam aliquam praesentium nesciunt et optio ea, architecto inventore voluptatem possimus?
+    </p>
+  </body>
+</html>
