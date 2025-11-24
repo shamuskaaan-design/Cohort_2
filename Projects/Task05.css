@@ -35,10 +35,6 @@ html,body{
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.494) ;
 }
 
-#card1:hover{
-  width:310px;
-  height:410px;
-}
 #card1 img{
   border-radius:50%;
   object-fit:fill;
