@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 60px 1fr 1fr 60px;
+        gap: 10px;
+        grid-template-areas:
+          "header header header"
+          "aside section section"
+          "aside left right"
+          "footer footer footer";
+      }
+
+      header {
+        background-color: antiquewhite;
+        border: 2px solid black;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+
+      header a {
+        text-decoration: none;
+        color: black;
+      }
+      aside {
+        position: relative;
+        border: 2px solid black;
+        grid-area: aside;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      aside img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      aside #bottom {
+        position: absolute;
+        bottom: -40%;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(transparent, rgb(133, 132, 132));
+        text-align: center;
+        padding: 20px;
+      }
+
+      #bottom span {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      aside:hover #bottom {
+        bottom: 0;
+      }
+      section {
+        background-color: rgb(164, 164, 120);
+        border: 2px solid black;
+        grid-area: section;
+        width:100%;
+        height:100%;
+        overflow: hidden;
+      }
+
+      section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #left {
+        background-color: bisque;
+        border: 2px solid black;
+        grid-area: left;
+        width:100%;
+        height:100%;
+        overflow: hidden;
+      }
+
+      #left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #right {
+        background-color: crimson;
+        border: 2px solid black;
+        grid-area: right;
+        width:100%;
+        height:100%;
+        overflow: hidden;
+      }
+
+      #right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      footer {
+        background-color: black;
+        grid-area: footer;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding:20px
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About us</a>
+        <a href="#">Gallery</a>
+        <a href="#">Security</a>
+      </header>
+      <section>
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image2">
+      </section>
+      <aside>
+        <img
+          src="https://images.unsplash.com/photo-1550025899-5f8a06b1b3a8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+        />
+        <div id="bottom">
+          <span>Daraksha Muskaan</span>
+        </div>
+      </aside>
+      <div id="left">
+        <img src="https://plus.unsplash.com/premium_photo-1667428818562-fc8379f23bfe?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo3">
+      </div>
+      <div id="right">
+        <img src="https://plus.unsplash.com/premium_photo-1679756099079-84d8ab833a3f?q=80&w=888&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo4">
+      </div>
+      <footer>Follow for more @shamuskaan007</footer>
+    </main>
+  </body>
+</html>
