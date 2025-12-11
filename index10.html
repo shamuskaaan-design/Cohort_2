@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    html, body{
+      height:100%;
+      width:100%;
+    }
+    body{
+      background-color:#16384c;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      display:flex;
+     justify-content: center;
+     align-items: center;
+     gap:20px;
+     flex-wrap: wrap;
+     max-width:1100px;
+    }
+
+    .card{
+      height:215px;
+      width:300px;
+      background-color:#fff;
+      border-radius:10px;
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
+      margin:30px 20px;
+      transition:0.5s;
+      position: relative;
+    }
+    .card:hover{
+      height:415px;
+    }
+
+    .imgbox{
+      height:200px;
+      width:200px;
+      position:relative;
+      top:-30px;
+      left:50px;
+    }
+    .imgbox img{
+      height:100%;
+      width:100%;
+      border-radius:10px;
+    }
+
+    .content{
+      margin-top:-140px;
+      opacity:0;
+      visibility: hidden;
+      text-align: center;
+      padding:20px 10px;
+      transition:0.3s ease-in-out;
+    } 
+
+    .card:hover .content{
+      visibility:visible;
+      opacity:1;
+      margin-top:2px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="imgbox">
+        <img src="https://images.unsplash.com/photo-1765273806093-5b863cc8b314?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+      <div class="content">
+        <h2>content box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor hic corporis eveniet earum debitis amet quia explicabo nesciunt nostrum.</p>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="card">
+      <div class="imgbox">
+        <img src="https://images.unsplash.com/photo-1765273806093-5b863cc8b314?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+      <div class="content">
+        <h2>content box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor hic corporis eveniet earum debitis amet quia explicabo nesciunt nostrum.</p>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="card">
+      <div class="imgbox">
+        <img src="https://images.unsplash.com/photo-1765273806093-5b863cc8b314?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+      <div class="content">
+        <h2>content box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor hic corporis eveniet earum debitis amet quia explicabo nesciunt nostrum.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
